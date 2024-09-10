@@ -13,8 +13,8 @@ Below is the high-level architectural diagram of the system:
 ### Client Layer
 <table>
   <tr>
-    <td><img src="docs/rendered/layers/CLIENT_LAYER.svg" alt="Client Layer" style="width: 100%;"/></td>
-    <td>
+    <td style="width: 40%;"><img src="docs/rendered/layers/CLIENT_LAYER.svg" alt="Client Layer" style="width: 100%;"/></td>
+    <td style="width: 60%;">
       <p>The client layer consists of Angular applications that interact with the system. These applications provide the user interface and handle user interactions.</p>
       <p>Each Angular application is designed to be modular and reusable, ensuring that components can be easily maintained and updated. The client layer includes various features such as:</p>
       <ul>
