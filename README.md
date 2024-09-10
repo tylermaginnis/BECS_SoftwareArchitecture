@@ -11,7 +11,22 @@ Below is the high-level architectural diagram of the system:
 ## Key Components
 
 ### Client Layer
-The client layer consists of Angular applications that interact with the system. These applications provide the user interface and handle user interactions.
+<table>
+  <tr>
+    <td><img src="docs/rendered/layers/CLIENT_LAYER.svg" alt="Client Layer" style="width: 100%;"/></td>
+    <td>
+      <p>The client layer consists of Angular applications that interact with the system. These applications provide the user interface and handle user interactions.</p>
+      <p>Each Angular application is designed to be modular and reusable, ensuring that components can be easily maintained and updated. The client layer includes various features such as:</p>
+      <ul>
+        <li>Registration: Allows users to sign up and create accounts.</li>
+        <li>Scheduling: Enables users to book and manage appointments.</li>
+        <li>History Tracking: Provides a detailed history of user interactions and activities.</li>
+        <li>Notifications: Sends alerts and reminders to users about important events and updates.</li>
+      </ul>
+      <p>Additionally, the client layer is responsible for rendering dynamic content, validating user inputs, and ensuring a seamless user experience across different devices and browsers.</p>
+    </td>
+  </tr>
+</table>
 
 ### API Gateway
 The API Gateway is responsible for routing requests from the client layer to the appropriate microservices. It supports GraphQL and RSocket for efficient communication.

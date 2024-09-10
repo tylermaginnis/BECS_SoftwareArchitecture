@@ -14,6 +14,9 @@ for i in "${!input_dirs[@]}"; do
   
   # Process each .puml file in the input directory and its subdirectories
   find "$input_dir" -name "*.puml" | while read -r puml_file; do
-    java -jar /c/dev/BECS_SoftwareArchitect/plantuml.jar -tsvg "$puml_file" -o "$output_dir"
+    relative_path="${puml_file#$input_dir}"
+    output_subdir="$output_dir$(dirname "$relative_path")"
+    mkdir -p "$output_subdir"
+    java -jar /c/dev/BECS_SoftwareArchitect/plantuml.jar -tsvg "$puml_file" -o "$output_subdir"
   done
 done
