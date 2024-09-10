@@ -38,8 +38,7 @@ Below is the high-level architectural diagram of the system:
   <tr>
     <td style="width: 100%;">
       <p>The Appointment Scheduling diagram illustrates the components and their interactions within the Appointment Scheduling App. The main components are:</p>
-      <ul>
-        <h4>Views</h4>
+        <b>Views</b>
         <ul>
           <li><strong>Appointment List:</strong> Displays a list of all appointments and allows users to view details, fill out forms, and see the calendar view.</li>
           <li><strong>Appointment Details:</strong> Provides detailed information about a specific appointment and interacts with the API Gateway and NgRx Store.</li>
@@ -49,7 +48,7 @@ Below is the high-level architectural diagram of the system:
           <li><strong>User Profile:</strong> Manages user information and interacts with the User Service and NgRx Store.</li>
         </ul>
         
-        <h4>Services</h4>
+        <b>Services</b>
         <ul>
           <li><strong>Appointment Service:</strong> Handles appointment-related transactions through the API Gateway.</li>
           <li><strong>Notification Service:</strong> Manages notifications and interacts with the API Gateway.</li>
@@ -57,11 +56,10 @@ Below is the high-level architectural diagram of the system:
           <li><strong>Calendar Service:</strong> Handles calendar-related transactions through the API Gateway.</li>
         </ul>
         
-        <h4>Entities</h4>
+        <b>Entities</b>
         <ul>
           <li><strong>Entities:</strong> Represents the main entities in the system, including Appointment, Notification, and User.</li>
         </ul>
-      </ul>
     </td>
   </tr>
 </table>
