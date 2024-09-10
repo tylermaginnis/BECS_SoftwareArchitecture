@@ -37,31 +37,37 @@ Below is the high-level architectural diagram of the system:
   </tr>
   <tr>
     <td style="width: 100%;">
-      <p>The Appointment Scheduling diagram illustrates the components and their interactions within the Appointment Scheduling App. The main components are:</p>
-      <b>Views</b>
-      <ul>
+    <p>The Appointment Scheduling diagram illustrates the components and their interactions within the Appointment Scheduling App. The main components are:</p>
+    <b>Views</b>
+    <ul>
         <li><strong>Appointment List:</strong> Displays a list of all appointments and allows users to view details, fill out forms, and see the calendar view.</li>
         <li><strong>Appointment Details:</strong> Provides detailed information about a specific appointment and interacts with the API Gateway and NgRx Store.</li>
         <li><strong>Appointment Form:</strong> Allows users to create or edit appointments, interacting with the API Gateway and NgRx Store.</li>
         <li><strong>Calendar View:</strong> Shows appointments in a calendar format and interacts with the API Gateway and NgRx Store.</li>
         <li><strong>Notification List:</strong> Displays notifications related to appointments and interacts with the Notification Service and NgRx Store.</li>
         <li><strong>User Profile:</strong> Manages user information and interacts with the User Service and NgRx Store.</li>
-      </ul>
-      
-      <b>Services</b>
-      <ul>
+    </ul>
+    </td>
+</tr>
+<tr>
+    <td style="width: 100%;">
+    <b>Services</b>
+    <ul>
         <li><strong>Appointment Service:</strong> Handles appointment-related transactions through the API Gateway.</li>
         <li><strong>Notification Service:</strong> Manages notifications and interacts with the API Gateway.</li>
         <li><strong>User Service:</strong> Manages user-related transactions through the API Gateway.</li>
         <li><strong>Calendar Service:</strong> Handles calendar-related transactions through the API Gateway.</li>
-      </ul>
-      
-      <b>Entities</b>
-      <ul>
-        <li><strong>Entities:</strong> Represents the main entities in the system, including Appointment, Notification, and User.</li>
-      </ul>
+    </ul>
     </td>
-  </tr>
+</tr>
+<tr>
+    <td style="width: 100%;">
+    <b>Entities</b>
+    <ul>
+        <li><strong>Entities:</strong> Represents the main entities in the system, including Appointment, Notification, and User.</li>
+    </ul>
+    </td>
+</tr>
 </table>
 
 
