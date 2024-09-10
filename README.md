@@ -29,7 +29,7 @@ Below is the high-level architectural diagram of the system:
   </tr>
 </table>
 
-### Appointment Scheduling Diagram
+### Appointment Scheduling
 
 <table>
   <tr>
