@@ -6,7 +6,7 @@ This document provides a high-level overview of the architectural design for our
 
 Below is the high-level architectural diagram of the system:
 
-![High-Level Architectural Diagram](docs/rendered/HIGH_LEVEL_ARCHITECTURAL_DIAGRAM.svg)
+<img src="docs/rendered/HIGH_LEVEL_ARCHITECTURAL_DIAGRAM.svg" style="width: 100%;" alt="High-Level Architectural Diagram"/>
 
 ## Key Components
 
