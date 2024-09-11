@@ -33,7 +33,7 @@ Below is the high-level architectural diagram of the system:
 
 The Appointment Scheduling System is designed to manage the scheduling, reminders, and cancellations of appointments. Below is a detailed architectural diagram of the system:
 
-<img src="docs/diagrams/layers/client/APPOINTMENT_SCHEDULING.svg" style="width: 100%;" alt="Appointment Scheduling System Diagram"/>
+<img src="docs/rendered/layers/client/APPOINTMENT_SCHEDULING.svg" style="width: 100%;" alt="Appointment Scheduling System Diagram"/>
 
 #### Key Components
 
@@ -60,7 +60,7 @@ This architecture ensures a modular, scalable, and efficient system for managing
 
 The Donor Management System is designed to handle registration, history tracking, and notifications for donors. Below is a detailed architectural diagram of the system:
 
-<img src="docs/diagrams/layers/client/DONOR_MANAGEMENT.svg" style="width: 100%;" alt="Donor Management System Diagram"/>
+<img src="docs/rendered/layers/client/DONOR_MANAGEMENT.svg" style="width: 100%;" alt="Donor Management System Diagram"/>
 
 #### Key Components
 
@@ -87,7 +87,7 @@ This architecture ensures a modular, scalable, and efficient system for managing
 
 The Compliance and Regulatory System is designed to handle regulatory compliance tracking, audit logs, and reporting. Below is a detailed architectural diagram of the system:
 
-<img src="docs/diagrams/layers/client/COMPLIANCE_REGULATORY.svg" style="width: 100%;" alt="Compliance and Regulatory System Diagram"/>
+<img src="docs/rendered/layers/client/COMPLIANCE_REGULATORY.svg" style="width: 100%;" alt="Compliance and Regulatory System Diagram"/>
 
 #### Key Components
 
@@ -114,7 +114,7 @@ This architecture ensures a modular, scalable, and efficient system for managing
 
 The Inventory Management System is designed to handle inventory tracking, storage conditions, and expiration dates. Below is a detailed architectural diagram of the system:
 
-<img src="docs/diagrams/layers/client/INVENTORY_MANAGEMENT.svg" style="width: 100%;" alt="Inventory Management System Diagram"/>
+<img src="docs/rendered/layers/client/INVENTORY_MANAGEMENT.svg" style="width: 100%;" alt="Inventory Management System Diagram"/>
 
 #### Key Components
 
