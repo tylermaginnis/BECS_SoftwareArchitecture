@@ -171,8 +171,24 @@ The Microservices Layer is a fundamental part of the Blood Establishment Compute
 
 This architecture ensures a modular, scalable, and efficient system for managing various functionalities within the BECS platform. The use of microservices allows for independent development, deployment, and scaling of different parts of the system, enhancing overall flexibility and maintainability.
 
-### Containerization
-Microservices are deployed as containers using Docker. Kubernetes is used to manage and orchestrate these containers, ensuring high availability and scalability.
+## Containerization Layer
+
+<img src="docs/rendered/layers/CONTAINERIZATION_LAYER.svg" style="width: 100%;" alt="Containerization Layer"/>
+
+The Containerization Layer is a critical component of the Blood Establishment Computer System (BECS) architecture. It leverages containerization and orchestration technologies to ensure that the system is scalable, resilient, and easy to manage. Below is a detailed explanation of the Containerization Layer:
+
+- **Docker**: Docker is used to containerize the microservices, encapsulating them along with their dependencies. This ensures consistency across different environments and simplifies the deployment process. Each microservice runs in its own container, providing isolation and resource control.
+- **Kubernetes**: Kubernetes is employed for container orchestration, managing the deployment, scaling, and operation of the containerized microservices. It provides high availability and scalability, ensuring that the system can handle varying loads and recover from failures. Kubernetes also automates the distribution and scheduling of containers across the cluster.
+- **AWS**: The containerized microservices and Kubernetes clusters are deployed on Amazon Web Services (AWS). AWS provides a robust and scalable infrastructure with services such as EC2 for compute, S3 for storage, RDS for relational databases, and Lambda for serverless functions. This cloud infrastructure supports the high availability and scalability requirements of the BECS platform.
+
+#### Data Flow
+
+1. **Containerization**: Microservices are packaged into Docker containers, ensuring consistency and portability.
+2. **Orchestration**: Kubernetes manages the deployment, scaling, and operation of the containers, providing high availability and efficient resource utilization.
+3. **Cloud Deployment**: The containerized microservices and Kubernetes clusters are deployed on AWS, leveraging its scalable and resilient infrastructure.
+
+This architecture ensures a modular, scalable, and efficient system for managing various functionalities within the BECS platform. The use of containerization and orchestration technologies enhances the flexibility, maintainability, and reliability of the system, making it well-suited to meet the demands of a modern, cloud-based application.
+
 
 ### Cloud Infrastructure
 The system runs on AWS cloud services, including EC2, S3, RDS, and Lambda. Infrastructure as Code (IaC) tools like Terraform and AWS CloudFormation are used to automate the deployment and management of cloud resources.
