@@ -19,10 +19,10 @@ Below is the high-level architectural diagram of the system:
       <p>The client layer consists of Angular applications that interact with the system. These applications provide the user interface and handle user interactions.</p>
       <p>Each Angular application is designed to be modular and reusable, ensuring that components can be easily maintained and updated. The client layer includes various features such as:</p>
       <ul>
-        <li>Registration: Allows users to sign up and create accounts.</li>
-        <li>Scheduling: Enables users to book and manage appointments.</li>
-        <li>History Tracking: Provides a detailed history of user interactions and activities.</li>
-        <li>Notifications: Sends alerts and reminders to users about important events and updates.</li>
+        <li>Appointment Scheduling System: Manages scheduling, reminders, and cancellations of appointments.</li>
+        <li>Donor Management System: Handles registration, history tracking, and notifications for donors.</li>
+        <li>Inventory Management System: Oversees tracking of blood units, storage conditions, and expiration dates.</li>
+        <li>Compliance and Reporting System: Ensures regulatory compliance, maintains audit logs, and generates reports.</li>
       </ul>
       <p>Additionally, the client layer is responsible for rendering dynamic content, validating user inputs, and ensuring a seamless user experience across different devices and browsers.</p>
     </td>
