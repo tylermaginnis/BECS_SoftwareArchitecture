@@ -33,7 +33,6 @@ Below is the high-level architectural diagram of the system:
 
 <table>
   <tr>
-    <td style="width: 40%;"><img src="docs/rendered/layers/client/APPOINTMENT_SCHEDULING.svg" alt="Appointment Scheduling" style="width: 100%;"/></td>
     <td style="width: 60%;">
       <p>The Appointment Scheduling system is a crucial component of the client layer. It manages the scheduling, reminders, and cancellations of appointments. This system ensures that appointments are efficiently organized and that users receive timely notifications.</p>
       <p>Key features of the Appointment Scheduling system include:</p>
@@ -46,6 +45,7 @@ Below is the high-level architectural diagram of the system:
       </ul>
       <p>Overall, the Appointment Scheduling system enhances user experience by providing a reliable and efficient way to manage appointments.</p>
     </td>
+    <td style="width: 40%;"><img src="docs/rendered/layers/client/APPOINTMENT_SCHEDULING.svg" alt="Appointment Scheduling" style="width: 100%;"/></td>
   </tr>
 </table>
 
