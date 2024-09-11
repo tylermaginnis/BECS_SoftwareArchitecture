@@ -29,46 +29,113 @@ Below is the high-level architectural diagram of the system:
   </tr>
 </table>
 
-### 1. Appointment Scheduling
+### Appointment Scheduling Angular Application System Architecture
 
-<table>
-  <tr>
-    <td style="width: 60%;">
-      <p>The Appointment Scheduling system is a crucial component of the client layer. It manages the scheduling, reminders, and cancellations of appointments. This system ensures that appointments are efficiently organized and that users receive timely notifications.</p>
-      <p>Key features of the Appointment Scheduling system include:</p>
-      <ul>
-        <li>Easy-to-use interface for booking and managing appointments.</li>
-        <li>Automated reminders and notifications to reduce no-shows.</li>
-        <li>Integration with calendar applications for seamless scheduling.</li>
-        <li>Support for rescheduling and cancellation of appointments.</li>
-        <li>Real-time availability updates to prevent double-booking.</li>
-      </ul>
-      <p>Overall, the Appointment Scheduling system enhances user experience by providing a reliable and efficient way to manage appointments.</p>
-    </td>
-    <td style="width: 40%;"><img src="docs/rendered/layers/client/APPOINTMENT_SCHEDULING.svg" alt="Appointment Scheduling" style="width: 100%;"/></td>
-  </tr>
-</table>
+The Appointment Scheduling System is designed to manage the scheduling, reminders, and cancellations of appointments. Below is a detailed architectural diagram of the system:
 
-### 2. Donor Management
+<img src="docs/diagrams/layers/client/APPOINTMENT_SCHEDULING.puml" style="width: 100%;" alt="Appointment Scheduling System Diagram"/>
 
-<table>
-  <tr>
-    <td style="width: 40%;"><img src="docs/rendered/layers/client/DONOR_MANAGEMENT.svg" alt="Donor Management" style="width: 100%;"/></td>
-    <td style="width: 60%;">
-      <p>The Donor Management system is a vital component of the client layer. It handles the registration, history tracking, and notifications for donors. This system ensures that donor information is accurately maintained and that donors receive timely updates.</p>
-      <p>Key features of the Donor Management system include:</p>
-      <ul>
-        <li>Comprehensive donor registration and profile management.</li>
-        <li>Tracking of donation history and eligibility status.</li>
-        <li>Automated notifications for donation reminders and eligibility updates.</li>
-        <li>Integration with health records for seamless data exchange.</li>
-        <li>Support for managing donor preferences and communication channels.</li>
-      </ul>
-      <p>Overall, the Donor Management system enhances the donor experience by providing a reliable and efficient way to manage donor information and interactions.</p>
-    </td>
-  </tr>
-</table>
+#### Key Components
 
+- **Views**: The system includes various views such as Scheduling View, Reminders View, Cancellations View, HIPAA Compliance View, Integration with Donor Management View, Real-time Availability View, Rescheduling View, and Calendar Integration View.
+- **Components**: The core components include Calendars, Notifications, Forms, Secure Data Handling, Consent Management, Data Encryption, User Interface, and API Integration.
+- **APIGateway**: The API Gateway supports GraphQL and RSocket for efficient communication and routes requests to the appropriate services.
+- **Services**: The system is composed of several microservices including Appointment Service, Notification Service, User Service, Calendar Service, and Integration Service.
+- **NgRxStore**: This is used for state management within the Angular application.
+- **Entities**: The main entities managed by the system are Appointment, Notification, User, and Calendar.
+- **Kafka**: Kafka is used for event streaming, with topics for Appointment, Notification, User, and Calendar.
+
+#### Data Flow
+
+1. **Client Interaction**: Users interact with the Appointment Scheduling App through various views.
+2. **API Gateway**: The app sends GraphQL queries/mutations to the API Gateway.
+3. **Service Routing**: The API Gateway routes these requests to the appropriate microservices.
+4. **State Management**: The Appointment Scheduling App and services interact with NgRxStore for state management.
+5. **Entity Management**: Services manage the entities and perform necessary operations.
+6. **Event Streaming**: Services publish events to Kafka topics, and also consume events from these topics for asynchronous communication.
+
+This architecture ensures a modular, scalable, and efficient system for managing appointments within the BECS platform.
+
+### Donor Management Angular Application System Architecture
+
+The Donor Management System is designed to handle registration, history tracking, and notifications for donors. Below is a detailed architectural diagram of the system:
+
+<img src="docs/diagrams/layers/client/DONOR_MANAGEMENT.puml" style="width: 100%;" alt="Donor Management System Diagram"/>
+
+#### Key Components
+
+- **Views**: The system includes various views such as Registration View, Scheduling View, History Tracking View, Notifications View, Electronic Records & Signatures View (21 CFR Part 11), HIPAA Compliance View, NIH Guidelines View, GDPR Compliance View (if applicable), and State Regulations View.
+- **Components**: The core components include Forms, Calendars, Dashboards, Notifications, Secure Data Handling, Consent Management, Data Encryption, User Interface, and API Integration.
+- **APIGateway**: The API Gateway supports GraphQL and RSocket for efficient communication and routes requests to the appropriate services.
+- **Services**: The system is composed of several microservices including Registration Service, Scheduling Service, History Tracking Service, Notification Service, User Service, and Integration Service.
+- **NgRxStore**: This is used for state management within the Angular application.
+- **Entities**: The main entities managed by the system are Registration, Schedule, History, Notification, and User.
+- **Kafka**: Kafka is used for event streaming, with topics for Registration, Schedule, History, Notification, and User.
+
+#### Data Flow
+
+1. **Client Interaction**: Users interact with the Donor Management App through various views.
+2. **API Gateway**: The app sends GraphQL queries/mutations to the API Gateway.
+3. **Service Routing**: The API Gateway routes these requests to the appropriate microservices.
+4. **State Management**: The Donor Management App and services interact with NgRxStore for state management.
+5. **Entity Management**: Services manage the entities and perform necessary operations.
+6. **Event Streaming**: Services publish events to Kafka topics, and also consume events from these topics for asynchronous communication.
+
+This architecture ensures a modular, scalable, and efficient system for managing donor-related activities within the BECS platform.
+
+### Compliance and Regulatory Angular Application System Architecture
+
+The Compliance and Regulatory System is designed to handle regulatory compliance tracking, audit logs, and reporting. Below is a detailed architectural diagram of the system:
+
+<img src="docs/diagrams/layers/client/COMPLIANCE_REGULATORY.puml" style="width: 100%;" alt="Compliance and Regulatory System Diagram"/>
+
+#### Key Components
+
+- **Views**: The system includes various views such as Regulatory Compliance View, Audit Logs View, Reporting View, FDA Regulations View (21 CFR Part 1271), HIPAA Compliance View, and GDPR Compliance View (if applicable).
+- **Components**: The core components include Reports, Logs, Data Export Tools, Compliance Dashboards, Quality Management, Audit Trails, User Interface, and API Integration.
+- **APIGateway**: The API Gateway supports GraphQL and RSocket for efficient communication and routes requests to the appropriate services.
+- **Services**: The system is composed of several microservices including Compliance Service, Reporting Service, Audit Service, User Service, and Integration Service.
+- **NgRxStore**: This is used for state management within the Angular application.
+- **Entities**: The main entities managed by the system are Compliance, Report, Audit, and User.
+- **Kafka**: Kafka is used for event streaming, with topics for Compliance, Report, Audit, and User.
+
+#### Data Flow
+
+1. **Client Interaction**: Users interact with the Compliance and Regulatory App through various views.
+2. **API Gateway**: The app sends GraphQL queries/mutations to the API Gateway.
+3. **Service Routing**: The API Gateway routes these requests to the appropriate microservices.
+4. **State Management**: The Compliance and Regulatory App and services interact with NgRxStore for state management.
+5. **Entity Management**: Services manage the entities and perform necessary operations.
+6. **Event Streaming**: Services publish events to Kafka topics, and also consume events from these topics for asynchronous communication.
+
+This architecture ensures a modular, scalable, and efficient system for managing compliance and regulatory activities within the BECS platform.
+
+### Inventory Management Angular Application System Architecture
+
+The Inventory Management System is designed to handle inventory tracking, storage conditions, and expiration dates. Below is a detailed architectural diagram of the system:
+
+<img src="docs/diagrams/layers/client/INVENTORY_MANAGEMENT.puml" style="width: 100%;" alt="Inventory Management System Diagram"/>
+
+#### Key Components
+
+- **Views**: The system includes various views such as Inventory Tracking View, Storage Conditions View, Expiration Dates View, Good Manufacturing Practice View (21 CFR Part 606), Bloodborne Pathogens Safety View (OSHA), CDC Guidelines View, EPA Regulations View, and GAMP Guidelines View.
+- **Components**: The core components include Tables, Charts, Alerts, Filters, Safety Protocols, Waste Management, Environmental Controls, User Interface, and API Integration.
+- **APIGateway**: The API Gateway supports GraphQL and RSocket for efficient communication and routes requests to the appropriate services.
+- **Services**: The system is composed of several microservices including Inventory Service, Storage Service, Expiration Service, Safety Service, User Service, and Integration Service.
+- **NgRxStore**: This is used for state management within the Angular application.
+- **Entities**: The main entities managed by the system are Inventory, Storage, Expiration, Safety, and User.
+- **Kafka**: Kafka is used for event streaming, with topics for Inventory, Storage, Expiration, Safety, and User.
+
+#### Data Flow
+
+1. **Client Interaction**: Users interact with the Inventory Management App through various views.
+2. **API Gateway**: The app sends GraphQL queries/mutations to the API Gateway.
+3. **Service Routing**: The API Gateway routes these requests to the appropriate microservices.
+4. **State Management**: The Inventory Management App and services interact with NgRxStore for state management.
+5. **Entity Management**: Services manage the entities and perform necessary operations.
+6. **Event Streaming**: Services publish events to Kafka topics, and also consume events from these topics for asynchronous communication.
+
+This architecture ensures a modular, scalable, and efficient system for managing inventory-related activities within the BECS platform.
 
 ### API Gateway
 The API Gateway is responsible for routing requests from the client layer to the appropriate microservices. It supports GraphQL and RSocket for efficient communication.
