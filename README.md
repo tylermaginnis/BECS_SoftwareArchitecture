@@ -12,22 +12,18 @@ Below is the high-level architectural diagram of the system:
 
 ### Angular Applications - Client Layer
 
-<table>
-  <tr>
-    <td style="width: 40%;"><img src="docs/rendered/layers/CLIENT_LAYER.svg" alt="Client Layer" style="width: 100%;"/></td>
-    <td style="width: 60%;">
-      <p>The client layer consists of Angular applications that interact with the system. These applications provide the user interface and handle user interactions.</p>
-      <p>Each Angular application is designed to be modular and reusable, ensuring that components can be easily maintained and updated. The client layer includes various features such as:</p>
-      <ul>
-        <li>Appointment Scheduling System: Manages scheduling, reminders, and cancellations of appointments.</li>
-        <li>Donor Management System: Handles registration, history tracking, and notifications for donors.</li>
-        <li>Inventory Management System: Oversees tracking of blood units, storage conditions, and expiration dates.</li>
-        <li>Compliance and Reporting System: Ensures regulatory compliance, maintains audit logs, and generates reports.</li>
-      </ul>
-      <p>Additionally, the client layer is responsible for rendering dynamic content, validating user inputs, and ensuring a seamless user experience across different devices and browsers.</p>
-    </td>
-  </tr>
-</table>
+<img src="docs/rendered/layers/CLIENT_LAYER.svg" alt="Client Layer" style="width: 100%;"/>
+
+The client layer consists of Angular applications that interact with the system. These applications provide the user interface and handle user interactions.
+
+Each Angular application is designed to be modular and reusable, ensuring that components can be easily maintained and updated. The client layer includes various features such as:
+
+- Appointment Scheduling System: Manages scheduling, reminders, and cancellations of appointments.
+- Donor Management System: Handles registration, history tracking, and notifications for donors.
+- Inventory Management System: Oversees tracking of blood units, storage conditions, and expiration dates.
+- Compliance and Reporting System: Ensures regulatory compliance, maintains audit logs, and generates reports.
+
+Additionally, the client layer is responsible for rendering dynamic content, validating user inputs, and ensuring a seamless user experience across different devices and browsers.
 
 ### Appointment Scheduling Angular Application System Architecture
 
