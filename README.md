@@ -53,6 +53,7 @@ Below is the high-level architectural diagram of the system:
 
 <table>
   <tr>
+    <td style="width: 40%;"><img src="docs/rendered/layers/client/DONOR_MANAGEMENT.svg" alt="Donor Management" style="width: 100%;"/></td>
     <td style="width: 60%;">
       <p>The Donor Management system is a vital component of the client layer. It handles the registration, history tracking, and notifications for donors. This system ensures that donor information is accurately maintained and that donors receive timely updates.</p>
       <p>Key features of the Donor Management system include:</p>
@@ -65,7 +66,6 @@ Below is the high-level architectural diagram of the system:
       </ul>
       <p>Overall, the Donor Management system enhances the donor experience by providing a reliable and efficient way to manage donor information and interactions.</p>
     </td>
-    <td style="width: 40%;"><img src="docs/rendered/layers/client/DONOR_MANAGEMENT.svg" alt="Donor Management" style="width: 100%;"/></td>
   </tr>
 </table>
 
