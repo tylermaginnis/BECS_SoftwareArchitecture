@@ -4,13 +4,11 @@ This document provides a high-level overview of the architectural design for our
 
 ## Architectural Diagram
 
-Below is the high-level architectural diagram of the system:
-
 <img src="docs/rendered/HIGH_LEVEL_ARCHITECTURAL_DIAGRAM.svg" style="width: 100%;" alt="High-Level Architectural Diagram"/>
 
-## Key Components
+## Client Layer
 
-### Angular Applications - Client Layer
+### Angular Applications
 
 <img src="docs/rendered/layers/CLIENT_LAYER.svg" alt="Client Layer" style="width: 100%;"/>
 
