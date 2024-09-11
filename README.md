@@ -149,8 +149,27 @@ The API Gateway Layer is a crucial component in the Blood Establishment Computer
 
 In summary, the API Gateway Layer is a vital component of the BECS architecture, providing secure, efficient, and scalable communication between the client applications and the backend microservices. It ensures that the system meets the necessary security and compliance requirements while maintaining high performance and availability.
 
-### Microservices Layer
-This layer contains the microservices that implement the core business logic. It also includes event streaming using Kafka to handle asynchronous communication between services.
+## Microservices Layer
+
+<img src="docs/rendered/layers/MICROSERVICES_LAYER.svg" style="width: 100%;" alt="Microservices Layer"/>
+
+The Microservices Layer is a fundamental part of the Blood Establishment Computer System (BECS) architecture. It consists of various microservices that handle different domains and functionalities within the system. Below is a detailed explanation of the Microservices Layer:
+
+- **API Gateway**: The API Gateway acts as an entry point to the microservices, handling GraphQL queries, RSocket communication, authentication, authorization, and rate limiting. It routes requests to the appropriate microservices.
+- **Microservices**: The system is divided into several packages, each containing specific microservices:
+  - **Appointment Management**: Includes Appointment Service, Notification Service, User Service, Calendar Service, and Integration Service.
+  - **Compliance and Reporting**: Includes Compliance Service, Reporting Service, and Audit Service.
+  - **Registration and Scheduling**: Includes Registration Service, Scheduling Service, and History Tracking Service.
+  - **Inventory Management**: Includes Inventory Service, Storage Service, Expiration Service, and Safety Service.
+- **Kafka**: Kafka is used for event streaming within the microservices layer. It has topics for various events such as Appointment, Notification, User, Calendar, Compliance, Report, Audit, Registration, Schedule, History, Inventory, Storage, Expiration, and Safety.
+
+#### Data Flow
+
+1. **Request Routing**: The API Gateway routes incoming requests from the client applications to the appropriate microservices.
+2. **Event Publishing**: Microservices publish events to Kafka topics for asynchronous communication.
+3. **Event Consumption**: Microservices consume events from Kafka topics to perform necessary operations.
+
+This architecture ensures a modular, scalable, and efficient system for managing various functionalities within the BECS platform. The use of microservices allows for independent development, deployment, and scaling of different parts of the system, enhancing overall flexibility and maintainability.
 
 ### Containerization
 Microservices are deployed as containers using Docker. Kubernetes is used to manage and orchestrate these containers, ensuring high availability and scalability.
