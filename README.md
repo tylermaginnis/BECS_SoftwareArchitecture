@@ -10,7 +10,7 @@ Below is the high-level architectural diagram of the system:
 
 ## Key Components
 
-### Client Layer
+### Angular Applications - Client Layer
 
 <table>
   <tr>
@@ -29,7 +29,7 @@ Below is the high-level architectural diagram of the system:
   </tr>
 </table>
 
-### Appointment Scheduling
+### 1. Appointment Scheduling
 
 <table>
   <tr>
@@ -48,6 +48,27 @@ Below is the high-level architectural diagram of the system:
     <td style="width: 40%;"><img src="docs/rendered/layers/client/APPOINTMENT_SCHEDULING.svg" alt="Appointment Scheduling" style="width: 100%;"/></td>
   </tr>
 </table>
+
+### 2. Donor Management
+
+<table>
+  <tr>
+    <td style="width: 60%;">
+      <p>The Donor Management system is a vital component of the client layer. It handles the registration, history tracking, and notifications for donors. This system ensures that donor information is accurately maintained and that donors receive timely updates.</p>
+      <p>Key features of the Donor Management system include:</p>
+      <ul>
+        <li>Comprehensive donor registration and profile management.</li>
+        <li>Tracking of donation history and eligibility status.</li>
+        <li>Automated notifications for donation reminders and eligibility updates.</li>
+        <li>Integration with health records for seamless data exchange.</li>
+        <li>Support for managing donor preferences and communication channels.</li>
+      </ul>
+      <p>Overall, the Donor Management system enhances the donor experience by providing a reliable and efficient way to manage donor information and interactions.</p>
+    </td>
+    <td style="width: 40%;"><img src="docs/rendered/layers/client/DONOR_MANAGEMENT.svg" alt="Donor Management" style="width: 100%;"/></td>
+  </tr>
+</table>
+
 
 ### API Gateway
 The API Gateway is responsible for routing requests from the client layer to the appropriate microservices. It supports GraphQL and RSocket for efficient communication.
