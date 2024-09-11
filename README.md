@@ -131,8 +131,23 @@ The Inventory Management System is designed to handle inventory tracking, storag
 
 This architecture ensures a modular, scalable, and efficient system for managing inventory-related activities within the BECS platform.
 
-### API Gateway
-The API Gateway is responsible for routing requests from the client layer to the appropriate microservices. It supports GraphQL and RSocket for efficient communication.
+## API Gateway Layer
+
+<img src="docs/rendered/layers/API_GATEWAY_LAYER.svg" style="width: 100%;" alt="API Gateway Layer"/>
+
+### API Gateway Layer in the Context of BECS
+
+The API Gateway Layer is a crucial component in the Blood Establishment Computer System (BECS) architecture. It acts as an intermediary between the client applications and the microservices, ensuring efficient and secure communication. Below is a detailed explanation of the API Gateway Layer:
+
+- **GraphQL and RSocket**: The API Gateway supports GraphQL for flexible and efficient querying of data, and RSocket for real-time, low-latency communication. This combination ensures that the client applications can interact with the backend services in an optimal manner.
+- **Authentication and Authorization**: The API Gateway handles authentication and authorization, ensuring that only authorized users can access the system. This is critical for maintaining the security and integrity of the BECS platform.
+- **Rate Limiting**: To protect the backend services from being overwhelmed by too many requests, the API Gateway implements rate limiting. This ensures that the system remains responsive and available even under high load conditions.
+- **Routing Requests**: The primary function of the API Gateway is to route incoming requests from the client applications to the appropriate microservices. This decouples the client applications from the backend services, allowing for greater flexibility and scalability.
+- **Integration with Microservices**: The API Gateway seamlessly integrates with the various microservices that make up the BECS platform. This includes microservices for appointment scheduling, compliance and regulatory management, donor management, and inventory management.
+- **Security and Compliance**: The API Gateway ensures that all communication between the client applications and the backend services is secure. This includes data encryption, access controls, and secure configurations, ensuring that the system meets all relevant security standards and regulations.
+- **Scalability and Performance**: By offloading tasks such as authentication, authorization, and rate limiting to the API Gateway, the backend services can focus on their core business logic. This improves the overall scalability and performance of the BECS platform.
+
+In summary, the API Gateway Layer is a vital component of the BECS architecture, providing secure, efficient, and scalable communication between the client applications and the backend microservices. It ensures that the system meets the necessary security and compliance requirements while maintaining high performance and availability.
 
 ### Microservices Layer
 This layer contains the microservices that implement the core business logic. It also includes event streaming using Kafka to handle asynchronous communication between services.
